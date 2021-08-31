@@ -312,7 +312,7 @@ form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 90px;
+  height: 100px;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
@@ -541,6 +541,14 @@ form {
   background-color: #d4ae9e;
 }
 
+#cruzSaladas:before {
+  color: #b4c4a2;
+}
+
+#cruz:before {
+  color: #d4ae9e;
+}
+
 #modulos {
   display: none;
 }
@@ -647,15 +655,13 @@ form {
     background: #e2c59b;
   }
   #contenedorIndice {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     width: 22rem;
     height: 80rem;
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
+    display: none;
   }
   #contenedorIndice .contenedorFoto {
     width: 100%;
@@ -670,9 +676,7 @@ form {
     height: 40rem;
   }
   #contenedorIndiceSalado {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: none;
     width: 22rem;
     height: 80rem;
     -webkit-box-orient: vertical;
