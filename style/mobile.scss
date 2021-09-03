@@ -97,9 +97,17 @@
     }
     .estiloTarjetaModuloInfo {
         width: 20rem;
-        height: 65rem;
+        height: 68rem;
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: column;
+        #btnModulo1 {
+            background-color: #e2c59b;
+        }
+        #botonSalirModuloUno {
+            display: flex;
+            width: 40%;
+            align-self: center;
+        }
 
         .fotoContainerModuloInfo {
             height: 32rem;

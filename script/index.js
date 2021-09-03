@@ -63,7 +63,7 @@ function crearTarjetas() {
         precioRecetario.classList.add('precioRecetario')
         card.appendChild(precioRecetario)
         let botonRecetario = document.createElement('button')
-        botonRecetario.innerHTML = 'Comprar'
+        botonRecetario.innerHTML = 'Ver Más'
         botonRecetario.classList.add('botonRecetario')
         botonRecetario.setAttribute('id', 'btn' + receta.id)
         card.appendChild(botonRecetario)
@@ -101,7 +101,7 @@ function crearTarjetasModulos() {
         precioModulo.classList.add('precioModulo')
         infoContainer.appendChild(precioModulo)
         let botonModulo = document.createElement('button')
-        botonModulo.innerHTML = 'Comprar'
+        botonModulo.innerHTML = 'Ver Más'
         botonModulo.classList.add('botonModulo')
         botonModulo.setAttribute('id', 'botonModulo')
         infoContainer.appendChild(botonModulo)
@@ -141,7 +141,6 @@ function crearTarjetasModulosInfo() {
         descripcion.innerHTML = moduloInfo.descripcion
         descripcion.classList.add('descripcionModuloInfo')
         infoContainer.appendChild(descripcion)
-
         var f = document.createElement("form");
         f.setAttribute('method', "post");
         f.setAttribute('action', "http://localhost:3001/checkout");
@@ -153,9 +152,15 @@ function crearTarjetasModulosInfo() {
         s.setAttribute('type', "submit");
         s.setAttribute('value', "Comprar ahora");
         s.setAttribute('class', "button");
+        s.setAttribute('id', "btnModulo1");
         f.appendChild(i);
         f.appendChild(s);
         infoContainer.appendChild(f)
+        var botonSalir = document.createElement("button");
+        botonSalir.setAttribute('id', 'botonSalirModuloUno')
+        botonSalir.classList.add('button')
+        botonSalir.innerHTML = "Salir"
+        infoContainer.appendChild(botonSalir)
 
 
     }

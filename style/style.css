@@ -217,6 +217,8 @@ i {
   border-width: 1px;
   border-radius: 5px;
   color: #fff;
+  font-size: 20px;
+  font-family: "Quicksand", sans-serif;
   cursor: pointer;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -630,7 +632,8 @@ form {
 }
 
 #botonSalirDulce,
-#botonSalirSalado {
+#botonSalirSalado,
+#botonSalirModuloUno {
   display: none;
 }
 /*# sourceMappingURL=style.css.map */

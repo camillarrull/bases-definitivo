@@ -180,6 +180,8 @@ i {
     border-width: 1px;
     border-radius: 5px;
     color: #fff;
+    font-size: 20px;
+    font-family: "Quicksand", sans-serif;
     cursor: pointer;
     justify-content: center;
     padding-bottom: calc(0.5em - 1px);
@@ -470,6 +472,7 @@ form {
     display: none;
 }
 #botonSalirDulce,
-#botonSalirSalado {
+#botonSalirSalado,
+#botonSalirModuloUno {
     display: none;
 }
