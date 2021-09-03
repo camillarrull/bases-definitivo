@@ -244,6 +244,8 @@ function eventos() {
     document.getElementById("cruz").addEventListener("click", desapareceMenuDulce);
     document.getElementById("btn2").addEventListener("click", apareceMenuSalado);
     document.getElementById("cruzSaladas").addEventListener("click", desapareceMenuSalado);
+    document.getElementById("botonSalirSalado").addEventListener("click", desapareceMenuSalado);
+    document.getElementById("botonSalirDulce").addEventListener("click", desapareceMenuDulce);
     document.getElementById('btnSalado').addEventListener('click', abrirModalFormulario);
     document.getElementById('btnDulce').addEventListener('click', abrirModalFormulario);
     document.getElementById('botonModulo').addEventListener('click', abrirModalModulo);

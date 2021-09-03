@@ -625,6 +625,15 @@ form {
   background-color: #f5ecdf;
 }
 
+.buttonSalir {
+  display: none;
+}
+
+#botonSalirDulce,
+#botonSalirSalado {
+  display: none;
+}
+
 @media only screen and (max-width: 768px) {
   #sobre-mi {
     display: -webkit-box;
@@ -658,10 +667,18 @@ form {
     width: 22rem;
     height: 80rem;
     -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     display: none;
+  }
+  #contenedorIndice #botonSalirDulce {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 40%;
+    -ms-flex-item-align: center;
+        align-self: center;
   }
   #contenedorIndice .contenedorFoto {
     width: 100%;
@@ -673,16 +690,27 @@ form {
   }
   #contenedorIndice .contenedorMenu {
     width: 100%;
-    height: 40rem;
+    height: 50rem;
+  }
+  #contenedorIndice #btnDulce {
+    background-color: #d4ae9e;
   }
   #contenedorIndiceSalado {
     display: none;
     width: 22rem;
     height: 80rem;
     -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #contenedorIndiceSalado #botonSalirSalado {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 40%;
+    -ms-flex-item-align: center;
+        align-self: center;
   }
   #contenedorIndiceSalado .contenedorFoto {
     width: 100%;
@@ -694,7 +722,10 @@ form {
   }
   #contenedorIndiceSalado .contenedorMenu {
     width: 100%;
-    height: 40rem;
+    height: 43rem;
+  }
+  #contenedorIndiceSalado #btnSalado {
+    background-color: #b4c4a2;
   }
   #tarjetas {
     display: -webkit-box;

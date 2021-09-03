@@ -624,4 +624,13 @@ form {
 .button:hover {
   background-color: #f5ecdf;
 }
+
+.buttonSalir {
+  display: none;
+}
+
+#botonSalirDulce,
+#botonSalirSalado {
+  display: none;
+}
 /*# sourceMappingURL=style.css.map */
