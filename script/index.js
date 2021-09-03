@@ -255,6 +255,7 @@ function eventos() {
     document.getElementById('btnDulce').addEventListener('click', abrirModalFormulario);
     document.getElementById('botonModulo').addEventListener('click', abrirModalModulo);
     document.getElementById("cruzModulo").addEventListener("click", cerrarModalModulo);
+    document.getElementById('botonSalirModuloUno').addEventListener("click", cerrarModalModulo);
 
 }
 
