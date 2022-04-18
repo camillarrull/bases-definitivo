@@ -1,10 +1,9 @@
 //TARJETAS
-const recetarios = [
-    {
+const recetarios = [{
         "id": 1,
         "titulo": "Recetas dulces",
         "imagen": './img/recetasDulces.jpeg',
-        "precio": 500
+        "precio": 1300
 
 
     },
@@ -12,29 +11,32 @@ const recetarios = [
         "id": 2,
         "titulo": "Recetas saladas",
         "imagen": './img/recSaladas1.jpeg',
-        "precio": 500
+        "precio": 1300
+    },
+    {
+        "id": 3,
+        "titulo": "Barra Libre",
+        "imagen": './img/image0.jpeg',
+        "precio": 1500
     },
 
 ]
-const modulos = [
-    {
-        "id": 1,
-        "titulo": "Primer modulo",
-        "descripcion": "Porque creemos que la organización es la base, el primer módulo es sobre organización, almacenamiento e ideas prácticas para llevar a cabo.",
-        "imagen": './img/chicasVideo.png',
-        "precio": 1800
-    }
-]
-const modulosInfo = [
-    {
-        "id": 1,
-        "titulo": "PRIMER MODULO",
-        "descripcion": "En este modulo encontrarás dos archivos pdfs y dos videos en donde te explicamos la importancia sobre la organización, el almacenamiento y te ofrecemos ideas prácticas para que lleves a cabo.<br> Como podes ver en la foto, uno de los pdf abarca todo lo que describe en el indice.<br> En el segundo, te ofrecemos una lista de infaltables para que tomes lo que te sirva y después puedas armar la tuya propia!(para esto te adjuntamos un modelo para que puedas imprimir).<br>Por último, te dejamos también una guía de emprendedores de Córdoba para que puedan aprovechar!",
-        "imagen": './img/organizacion.png',
+const modulos = [{
+    "id": 1,
+    "titulo": "Primer modulo",
+    "descripcion": "Porque creemos que la organización es la base, el primer módulo es sobre organización, almacenamiento e ideas prácticas para llevar a cabo.",
+    "imagen": './img/chicasVideo.png',
+    "precio": 1800
+}]
+const modulosInfo = [{
+    "id": 1,
+    "titulo": "PRIMER MODULO",
+    "descripcion": "En este modulo encontrarás dos archivos pdfs y dos videos en donde te explicamos la importancia sobre la organización, el almacenamiento y te ofrecemos ideas prácticas para que lleves a cabo.<br> Como podes ver en la foto, uno de los pdf abarca todo lo que describe en el indice.<br> En el segundo, te ofrecemos una lista de infaltables para que tomes lo que te sirva y después puedas armar la tuya propia!(para esto te adjuntamos un modelo para que puedas imprimir).<br>Por último, te dejamos también una guía de emprendedores de Córdoba para que puedan aprovechar!",
+    "imagen": './img/organizacion.png',
 
-    }
-]
+}]
 window.onload = cargaPagina;
+
 function cargaPagina() {
     crearTarjetas();
     crearTarjetasModulos();
@@ -53,6 +55,7 @@ function crearTarjetas() {
         let foto = document.createElement('img')
         foto.src = receta.imagen;
         foto.classList.add('estiloImagen')
+        foto.setAttribute('id', 'foto' + receta.id)
         card.appendChild(foto)
         let titulo = document.createElement("p")
         titulo.innerHTML = receta.titulo
@@ -72,6 +75,7 @@ function crearTarjetas() {
 
     }
 }
+
 function crearTarjetasModulos() {
     for (const modulo of modulos) {
         const containterTarjetas = document.getElementById('tarjetaModulos');
@@ -110,6 +114,7 @@ function crearTarjetasModulos() {
 
     }
 }
+
 function crearTarjetasModulosInfo() {
     for (const moduloInfo of modulosInfo) {
         const containterTarjetas = document.getElementById('modulos');
@@ -178,6 +183,7 @@ function apareceMenuDulce() {
     });
 
 }
+
 function desapareceMenuDulce() {
     let tarjetas = document.getElementById('tarjetas')
     let recetario = document.getElementById('contenedorIndice')
@@ -196,6 +202,7 @@ function apareceMenuSalado() {
     });
 
 }
+
 function desapareceMenuSalado() {
     let tarjetas = document.getElementById('tarjetas')
     let recetario = document.getElementById('contenedorIndiceSalado')
@@ -204,12 +211,33 @@ function desapareceMenuSalado() {
         tarjetas.style.display = 'flex'
     });
 }
+
+function apareceMenuTragos() {
+    let tarjetas = document.getElementById('tarjetas')
+    let recetario = document.getElementById('contenedorIndiceTragos')
+    document.body.addEventListener("click", () => {
+        recetario.style.display = 'flex';
+        tarjetas.style.display = 'none'
+    });
+
+}
+
+function desapareceMenuTragos() {
+    let tarjetas = document.getElementById('tarjetas')
+    let recetario = document.getElementById('contenedorIndiceTragos')
+    document.body.addEventListener("click", () => {
+        recetario.style.display = 'none';
+        tarjetas.style.display = 'flex'
+    });
+}
+
 function abrirModalFormulario() {
     let modal = document.getElementById('modal')
     document.body.addEventListener('click', () => {
         modal.style.display = 'flex'
     })
 }
+
 function cerrarModalFormulario() {
     let tarjetas = document.getElementById('tarjetas')
     let recetarioSalado = document.getElementById('contenedorIndiceSalado')
@@ -231,6 +259,7 @@ function abrirModalModulo() {
         tarjetas.style.display = 'none';
     })
 }
+
 function cerrarModalModulo() {
     let tarjetas = document.getElementById('tarjetaModulos')
     let modulos = document.getElementById('modulos')
@@ -249,8 +278,11 @@ function eventos() {
     document.getElementById("cruz").addEventListener("click", desapareceMenuDulce);
     document.getElementById("btn2").addEventListener("click", apareceMenuSalado);
     document.getElementById("cruzSaladas").addEventListener("click", desapareceMenuSalado);
+    document.getElementById("btn3").addEventListener("click", apareceMenuTragos);
+    document.getElementById("cruzTragos").addEventListener("click", desapareceMenuTragos);
     document.getElementById("botonSalirSalado").addEventListener("click", desapareceMenuSalado);
     document.getElementById("botonSalirDulce").addEventListener("click", desapareceMenuDulce);
+    document.getElementById("botonSalirTragos").addEventListener("click", desapareceMenuTragos);
     document.getElementById('btnSalado').addEventListener('click', abrirModalFormulario);
     document.getElementById('btnDulce').addEventListener('click', abrirModalFormulario);
     document.getElementById('botonModulo').addEventListener('click', abrirModalModulo);
@@ -258,4 +290,3 @@ function eventos() {
     document.getElementById('botonSalirModuloUno').addEventListener("click", cerrarModalModulo);
 
 }
-

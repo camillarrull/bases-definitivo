@@ -252,6 +252,10 @@ form {
   margin: 5%;
 }
 
+#section-cursos {
+  display: none;
+}
+
 #containerCursos {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -260,10 +264,8 @@ form {
       justify-content: space-around;
 }
 
-.cursos-modulos {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+#cursos-modulos {
+  display: none;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -487,6 +489,10 @@ form {
   font-style: initial;
 }
 
+.contenedorMenu i {
+  cursor: pointer;
+}
+
 #contenedorIndiceSalado {
   display: none;
   -ms-flex-item-align: center;
@@ -521,6 +527,7 @@ form {
 
 #contenedorIndiceSalado .contenedorMenu i {
   color: #d5decb;
+  cursor: pointer;
 }
 
 #contenedorIndiceSalado .contenedorMenu i:hover {
@@ -543,12 +550,53 @@ form {
   background-color: #d4ae9e;
 }
 
+#btnTragos:hover {
+  background-color: #d4ae9e;
+}
+
 #cruzSaladas:before {
   color: #b4c4a2;
 }
 
 #cruz:before {
   color: #d4ae9e;
+}
+
+#cruzTragos:before {
+  color: #d4ae9e;
+}
+
+#contenedorIndiceTragos {
+  display: none;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-top: 2%;
+  display: none;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+  width: 45rem;
+  height: 40rem;
+}
+
+#tragos {
+  margin-top: 22px;
+}
+
+#foto3 {
+  height: 366px !important;
+}
+
+.formTragos {
+  margin: 15%;
 }
 
 #modulos {
@@ -633,6 +681,7 @@ form {
 
 #botonSalirDulce,
 #botonSalirSalado,
+#botonSalirTragos,
 #botonSalirModuloUno {
   display: none;
 }

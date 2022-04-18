@@ -5,104 +5,166 @@
         display: flex;
         flex-direction: column;
     }
+
     #container {
         display: flex;
         flex-direction: column;
     }
+
     .parrafo-foto {
         width: 100%;
     }
+
     .imgFotoNutris {
         width: 40%;
         margin-top: 10%;
     }
+
     #navbarExampleTransparentExample {
         background: rgb(226, 197, 155);
     }
+
     #contenedorIndice {
         width: 22rem;
         height: 80rem;
         flex-direction: column;
         display: none;
+
         #botonSalirDulce {
             display: flex;
             width: 40%;
             align-self: center;
         }
+
         .contenedorFoto {
             width: 100%;
             height: 40rem;
+
             img {
                 max-width: 100%;
                 height: 100%;
             }
         }
+
         .contenedorMenu {
             width: 100%;
             height: 50rem;
         }
+
         #btnDulce {
             background-color: #d4ae9e;
         }
     }
+
     #contenedorIndiceSalado {
         display: none;
         width: 22rem;
         height: 80rem;
         flex-direction: column;
+
         #botonSalirSalado {
             display: flex;
             width: 40%;
             align-self: center;
         }
+
         .contenedorFoto {
             width: 100%;
             height: 40rem;
+
             img {
                 max-width: 100%;
                 height: 100%;
             }
         }
+
         .contenedorMenu {
             width: 100%;
             height: 43rem;
         }
+
         #btnSalado {
             background-color: #b4c4a2;
         }
     }
+
+    #contenedorIndiceTragos {
+        display: none;
+        width: 22rem;
+        height: 80rem;
+        flex-direction: column;
+
+        #botonSalirTragos {
+            display: flex;
+            width: 40%;
+            align-self: center;
+        }
+
+        .contenedorFoto {
+            width: 100%;
+            height: 40rem;
+
+            img {
+                max-width: 100%;
+                height: 100%;
+            }
+        }
+
+        .contenedorMenu {
+            width: 100%;
+            height: 43rem;
+        }
+
+        #btnTragos {
+            background-color: #d4ae9e;
+        }
+    }
+
+    .formTragos {
+        margin: 10%;
+        margin-bottom: 6%;
+    }
+
     #tarjetas {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
+
     #tarjetaModulos {
         height: 30rem;
     }
+
     #containerCursos {
         display: flex;
         flex-direction: column;
+
         .fotoCurso {
             width: 100%;
             display: flex;
             justify-content: center;
         }
     }
+
     .estiloTarjetaModulo {
         display: flex;
         flex-direction: column;
+
         .infoContainer {
             width: 100%;
         }
     }
+
     .estiloTarjetaModuloInfo {
         width: 20rem;
         height: 68rem;
         display: flex;
         flex-direction: column;
+
         #btnModulo1 {
             background-color: #e2c59b;
         }
+
         #botonSalirModuloUno {
             display: flex;
             width: 40%;
@@ -111,11 +173,13 @@
 
         .fotoContainerModuloInfo {
             height: 32rem;
+
             img {
                 width: 319px;
                 height: 512px;
             }
         }
+
         .infoContainerModuloInfo {
             width: 100%;
 
@@ -124,6 +188,7 @@
             }
         }
     }
+
     .claseFooter {
         flex-direction: column-reverse;
         height: 180px;
