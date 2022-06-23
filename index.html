@@ -46,12 +46,12 @@
                     </span>
                     <span class="items">RECETARIOS</span>
                 </a>
-                <a class="navbar-item" href="#cursos-modulos" id="cursosHover">
+                <!-- <a class="navbar-item" href="#cursos-modulos" id="cursosHover">
                     <span class="icon">
                         <i class="fas fa-file-alt"></i>
                     </span>
                     <span class="items">CURSOS</span>
-                </a>
+                </a> -->
                 <a class="navbar-item" href="#contacto" id="contactoHover">
                     <span class="icon">
                         <i class="fas fa-th-list"></i>
@@ -82,23 +82,9 @@
             <h3 class="title is-2" id="nosotras">NOSOTRAS</h3>
             <div class="container" id="container">
                 <div class="parrafo-foto">
-                    <p> Nos hicimos amigas en primer año de la facultad. Cursamos juntas
-                        toda la
-                        carrera de
-                        Nutrición en la Universidad Nacional de Córdoba, rendimos todos los finales juntas (sisi,
-                        toooodos!), hicimos la tesis y nos recibimos junto con Sofi otra de nuestras amigas
-                        nutris!
-
-                        Pasamos muchas noches leyendo, riendo, estudiando, repasando y hasta llorando
-                        juntas. Y... de eso se trata la vida no? De compartir momentos y coleccionar
-                        experiencias; por eso hoy a casi 3 años de habernos recibido decidimos crear algo
-                        juntas!
-                        El comienzo de esta unión ya siendo Licenciadas en Nutrición parte del deseo de
-                        brindar una herramienta a todas aquellas personas que tengan ganas de explorar el
-                        mundo de la alimentación saludable que tanto nos apasiona!
-
-                        Asique primero que nada... ¡GRACIAS POR ESTAR ACÁ, LEYENDO ESTO! Esperamos de
-                        todo corazón que les guste.
+                    <p> Somos super amigas, compartimos mucho amor sobre nuestro trabajo
+                        diario como nutris y un día creamos BASES con la idea de brindar herramientas y recursos a todas
+                        aquellas personas que tengan ganas de tener una alimentación más simple, real y consciente.
                     </p>
                 </div>
                 <div class="foto">
@@ -297,92 +283,129 @@
                     </div>
                 </div>
                 <form action="http://localhost:3001/checkout" method="POST" class="formTragos">
-                    <input type="hidden" name="id" value="2">
+                    <input type="hidden" name="id" value="3">
                     <input type="submit" value="Comprar ahora" class="button" id="btnTragos">
                 </form>
                 <button class="button" id="botonSalirTragos">Salir</button>
+            </div>
+        </div>
+        <div id='contenedorIndiceTupper'>
+            <div class="contenedorFoto">
+                <img src="./img/indiceTupper.jpg">
+            </div>
+            <div class="contenedorMenu">
+                <span>
+                    <i class="fas fa-times" id="cruzTupper"></i>
+                </span>
+                <h1>INDICE</h1>
+                <div id="tupper" class="numeracionPostres">
+                    <div class="postres">
+                        <ul class="postreTitulo">¿Cómo organizarse?
+                            <li>Paso a paso de cómo organizarse mejor</li>
+                            <li>Compras</li>
+                            <li>Almacenamiento</li>
+                            <li>Planificación y acción</li>
+                        </ul>
+                    </div>
+                    <div class="postres">
+                        <ul class="postreTitulo">Anatomía de un tupper completo
+                        </ul>
+                    </div>
+                    <div class="postres">
+                        <ul class="postreTitulo">Ejemplos de tuppers completos
+                        </ul>
+                    </div>
+                </div>
+
+                <form action="http://localhost:3001/checkout" method="POST" class="formTupper">
+                    <input type="hidden" name="id" value="4">
+                    <input type="submit" value="Comprar ahora" class="button" id="btnTupper">
+                </form>
+                <button class="button" id="botonSalirTupper">Salir</button>
 
 
 
             </div>
         </div>
-    </div>
 
 
-    <!-- SECCION CURSOS -->
+        <!-- SECCION CURSOS -->
 
-    <section class="section" id="about">
-        <div class="section-heading" id="section-cursos">
-            <h3 class="title is-2" id="cursos">CURSOS</h3>
-            <div class="container" id="containerCursos">
-                <div class="parrafo-foto">
-                    <p> En esta sección encontrarás diferentes módulos con contenido para que lleves adelante un estilo
-                        de vida saludable.
-                        Los mismos contaran con archivos pdf y videos de apoyo que te seriviran de guía para ir logrando
-                        tus metas!
-                    </p>
-                </div>
-                <div class="fotoCurso">
-                    <img src="./img/instrumento.png" class="imgFotoNutris">
+        <section class="section" id="about">
+            <div class="section-heading" id="section-cursos">
+                <h3 class="title is-2" id="cursos">CURSOS</h3>
+                <div class="container" id="containerCursos">
+                    <div class="parrafo-foto">
+                        <p> En esta sección encontrarás diferentes módulos con contenido para que lleves adelante un
+                            estilo
+                            de vida saludable.
+                            Los mismos contaran con archivos pdf y videos de apoyo que te seriviran de guía para ir
+                            logrando
+                            tus metas!
+                        </p>
+                    </div>
+                    <div class="fotoCurso">
+                        <img src="./img/instrumento.png" class="imgFotoNutris">
+                    </div>
                 </div>
             </div>
+        </section>
+        <div class="cursos-modulos" id="cursos-modulos">
+            <div id="tarjetaModulos"></div>
+            <div id="modulos" class="modulosInfo"></div>
         </div>
-    </section>
-    <div class="cursos-modulos" id="cursos-modulos">
-        <div id="tarjetaModulos"></div>
-        <div id="modulos" class="modulosInfo"></div>
-    </div>
-    <!-- <div class="section-heading" id="section-contacto">
+        <!-- <div class="section-heading" id="section-contacto">
         <h3 class="title is-2" id="contacto">CONTACTO</h3>
     </div> -->
 
-    <footer class="claseFooter" id="contacto">
+        <footer class="claseFooter" id="contacto">
 
-        <div class="contenedorNutri">
-            <p>Lic. Rodriguez Pilar</p>
-            <div class='instagram'>
-
-
-                <a href="https://www.instagram.com/nutricion.prm/"><span class="iconoI">
-                        <i class="fab fa-instagram fa-lg" id="iconoInstagramP"></i>
-                    </span>nutricion.prm<img src="./img/logo-nutrición-prm.png" class="logoNutri"></a>
-
-            </div>
-            <div class="turnosWpp">
-                <span class="iconoW">
-                    <i class="fab fa-whatsapp" id='iconoWhatsappP'></i>
-                </span>
-                <a
-                    href="https://api.whatsapp.com/send?phone=5493517556180&text=Hola!%20Quisiera%20sacar%20un%20turno!">turnos</a>
-            </div>
-
-        </div>
-        <div class="contenedorNutri">
-            <p>Lic. Valfre Alejandra</p>
-            <div class='instagram'>
+            <div class="contenedorNutri">
+                <p>Lic. Rodriguez Pilar</p>
+                <div class='instagram'>
 
 
+                    <a href="https://www.instagram.com/nutricion.prm/"><span class="iconoI">
+                            <i class="fab fa-instagram fa-lg" id="iconoInstagramP"></i>
+                        </span>nutricion.prm<img src="./img/logo-nutrición-prm.png" class="logoNutri"></a>
 
-                <a href="https://www.instagram.com/nutricionsimple_/" class='refInstagram'><span class="iconoI">
-                        <i class="fab fa-instagram fa-lg" id="iconoInstagramV"></i>
-                    </span>nutricionsimple_<img src="./img/logo-nutrición-simple.png" class="logoNutri"></a>
+                </div>
+                <div class="turnosWpp">
+                    <span class="iconoW">
+                        <i class="fab fa-whatsapp" id='iconoWhatsappP'></i>
+                    </span>
+                    <a
+                        href="https://api.whatsapp.com/send?phone=5493517556180&text=Hola!%20Quisiera%20sacar%20un%20turno!">turnos</a>
+                </div>
 
             </div>
-            <div class="turnosWpp">
-                <span class="iconoW">
-                    <i class="fab fa-whatsapp" id='iconoWhatsappV'></i>
-                </span>
+            <div class="contenedorNutri">
+                <p>Lic. Valfre Alejandra</p>
+                <div class='instagram'>
 
-                <a
-                    href="https://api.whatsapp.com/send?phone=5493512135597&text=Hola!%20Quisiera%20sacar%20un%20turno!">turnos</a>
 
+
+                    <a href="https://www.instagram.com/nutricionsimple_/" class='refInstagram'><span class="iconoI">
+                            <i class="fab fa-instagram fa-lg" id="iconoInstagramV"></i>
+                        </span>nutricionsimple_<img src="./img/logo-nutrición-simple.png" class="logoNutri"></a>
+
+                </div>
+                <div class="turnosWpp">
+                    <span class="iconoW">
+                        <i class="fab fa-whatsapp" id='iconoWhatsappV'></i>
+                    </span>
+
+                    <a
+                        href="https://api.whatsapp.com/send?phone=5493512135597&text=Hola!%20Quisiera%20sacar%20un%20turno!">turnos</a>
+
+                </div>
             </div>
-        </div>
 
-    </footer>
-    <script src="/script/index.js"></script>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/1.9.1/js/OverlayScrollbars.min.js'></script>
-    <script src="/script/script.js"></script>
+        </footer>
+        <script src="/script/index.js"></script>
+        <script
+            src='https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/1.9.1/js/OverlayScrollbars.min.js'></script>
+        <script src="/script/script.js"></script>
 
 
 

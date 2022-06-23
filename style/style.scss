@@ -118,7 +118,7 @@ i {
 
 .imgFotoNutris {
     box-shadow: 2px 2px 10px #666;
-    width: 60%;
+    width: 50%;
 }
 
 #nosotras,
@@ -472,7 +472,17 @@ form {
     }
 }
 
+#btnTupper {
+    &:hover {
+        background-color: rgb(212, 174, 158);
+    }
+}
+
 #cruzSaladas:before {
+    color: rgb(180, 196, 162);
+}
+
+#cruzTupper:before {
     color: rgb(180, 196, 162);
 }
 
@@ -508,12 +518,70 @@ form {
     height: 366px !important;
 }
 
+#foto4 {
+    height: 366px !important;
+}
+
 .formTragos {
     margin: 15%;
 }
 
 #modulos {
     display: none;
+}
+
+#contenedorIndiceTupper {
+    display: none;
+    align-self: center;
+    margin-top: 2%;
+    display: none;
+    flex-direction: row;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+    width: 45rem;
+    height: 40rem;
+
+    .contenedorMenu {
+        background-color: rgb(250, 255, 244);
+
+        span {
+            align-self: flex-end;
+            font-size: 20px;
+            margin-right: 10px;
+        }
+
+        i {
+            color: rgb(213, 222, 203);
+            cursor: pointer;
+
+            &:hover {
+                color: black;
+            }
+        }
+
+        h1 {
+            color: rgb(213, 222, 203);
+        }
+    }
+
+    .postres {
+        .postreTitulo {
+            color: rgb(180, 196, 162);
+        }
+    }
+}
+
+#tupper {
+    margin-top: 60px;
+    font-size: 13px;
+}
+
+.formTupper {
+    margin: 85% !important;
 }
 
 .estiloTarjetaModuloInfo {
@@ -585,6 +653,7 @@ form {
 #botonSalirDulce,
 #botonSalirSalado,
 #botonSalirTragos,
+#botonSalirTupper,
 #botonSalirModuloUno {
     display: none;
 }

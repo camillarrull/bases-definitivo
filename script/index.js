@@ -19,6 +19,12 @@ const recetarios = [{
         "imagen": './img/image0.jpeg',
         "precio": 1500
     },
+    {
+        "id": 4,
+        "titulo": "El tupper de cada día",
+        "imagen": './img/fotoTupper.jpg',
+        "precio": 1500
+    }
 
 ]
 const modulos = [{
@@ -231,6 +237,25 @@ function desapareceMenuTragos() {
     });
 }
 
+function apareceMenuTupper() {
+    let tarjetas = document.getElementById('tarjetas')
+    let recetario = document.getElementById('contenedorIndiceTupper')
+    document.body.addEventListener("click", () => {
+        recetario.style.display = 'flex';
+        tarjetas.style.display = 'none'
+    });
+
+}
+
+function desapareceMenuTupper() {
+    let tarjetas = document.getElementById('tarjetas')
+    let recetario = document.getElementById('contenedorIndiceTupper')
+    document.body.addEventListener("click", () => {
+        recetario.style.display = 'none';
+        tarjetas.style.display = 'flex'
+    });
+}
+
 function abrirModalFormulario() {
     let modal = document.getElementById('modal')
     document.body.addEventListener('click', () => {
@@ -280,9 +305,12 @@ function eventos() {
     document.getElementById("cruzSaladas").addEventListener("click", desapareceMenuSalado);
     document.getElementById("btn3").addEventListener("click", apareceMenuTragos);
     document.getElementById("cruzTragos").addEventListener("click", desapareceMenuTragos);
+    document.getElementById("btn4").addEventListener("click", apareceMenuTupper);
+    document.getElementById("cruzTupper").addEventListener("click", desapareceMenuTupper);
     document.getElementById("botonSalirSalado").addEventListener("click", desapareceMenuSalado);
     document.getElementById("botonSalirDulce").addEventListener("click", desapareceMenuDulce);
     document.getElementById("botonSalirTragos").addEventListener("click", desapareceMenuTragos);
+    document.getElementById("botonSalirTupper").addEventListener("click", desapareceMenuTupper);
     document.getElementById('btnSalado').addEventListener('click', abrirModalFormulario);
     document.getElementById('btnDulce').addEventListener('click', abrirModalFormulario);
     document.getElementById('botonModulo').addEventListener('click', abrirModalModulo);
